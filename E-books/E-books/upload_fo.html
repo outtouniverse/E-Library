@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Book</title>
+</head>
+<body>
+    <h2>Upload Book</h2>
+    <form action="uplo.php" method="post" enctype="multipart/form-data">
+        <label for="book_name">Book Name:</label><br>
+        <input type="text" id="book_name" name="book_name"><br><br>
+        <label for="book_img">Book Cover Page</label><br>
+        <input type="file" id="book_img" name="book_img"><br><br>
+        <label for="book_auth">Authour</label><br>
+        <input type="text" id="book_auth" name="book_auth"><br><br>
+        <label for="book_pdf">Select PDF:</label><br>
+        <input type="file" id="book_pdf" name="book_pdf"><br><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Upload Book" name="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Ebooks</title>
+    <meta name="title" content="Bookish - Read More And Make Success" />
+    <meta
+      name="description"
+      content="Read More And Make Success The Result Of Perfection. - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad harum quibusdam, assumenda quia explicabo."
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+
+ .form{
+    width: 240px;
+    height: 400px;
+    background: linear-gradient(to top, hsl(233, 33%, 95%)50%,hsl(233, 33%, 95%)50%);
+    position: absolute;
+    top: 50px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #6353ca;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #785ada;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #0a0e0e;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.form ::placeholder{
+    color: #191e24;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 100%;
+    height: 40px;
+    background: #cb84e1;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #6f6acf;
+    color: #6956af;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #8564d8;
+}
+    </style>
+
+    <!-- 
+    - google font link
+  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload image
+  -->
+    
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">E-Books</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#Description" class="navbar-link" data-nav-link
+                >Description</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#Preview" class="navbar-link" data-nav-link>Preview</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#Profile" class="navbar-link" data-nav-link>Profile</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#author" class="navbar-link" data-nav-link>Author</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#upload&download" class="navbar-link" data-nav-link
+                >Upload & Download</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+          
+
+        </nav>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="open"
+          ></ion-icon>
+
+          <ion-icon
+            name="close-outline"
+            aria-hidden="true"
+            class="close"
+          ></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <!-- start -->
+
+    <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+          <div class="hero-content">
+            <p class="section-subtitle">Let's Make The Best Investment</p>
+
+            <h1 class="h1 hero-title">
+                E-BOOKWS <br><span>UPLOAD &</span> DOWNLOAD
+            </h1>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+              harum quibusdam, assumenda quia explicabo.
+            </p>
+          </div>
+
+          <div>
+            <div class="form">
+                <form method ='post' action="/phpmicro/conn.php">
+                <h2>Signup</h2>
+                <input type="email" name="email" placeholder="Enter Your Email" id="email">
+                <input type="text" name="username" placeholder="Enter Your username" id="username">
+                <input type="password" name="password" placeholder="Enter Your Password" id="password">
+                <button class="btnn" type="submit" name="submit">Signup</button>
+
+                <p class="link">Already have account?<br>
+                <a href="LOGIN_ANOTHER.html">Login</a> here</a></p>
+                </form>
+                
+                </div>
+          </div>
+        </div>
+      </section>
+
+<!-- js -->
+
+<script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
